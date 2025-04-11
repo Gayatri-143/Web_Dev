@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 450px;
+        }
+        input, select, textarea {
+            width: 97%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Registration</h2>
+        <form action="submit_form.php" method="post">
+            <label for="emp_id">Employee ID:</label>
+            <input type="text" id="emp_id" name="emp_id" required>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            
+            <p>Gender:</p>
+            <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male" style="margin-left: -41px;"/>  
+            </div>
+
+            <div>
+            <label for="male">Female</label>
+            <input type="radio" id="female" name="gender" value="Female" style="margin-left: -60px;" />
+            </div>
+            
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
