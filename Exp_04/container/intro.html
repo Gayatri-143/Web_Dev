@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2, #fc5c7d, #ff9966);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 50px;
+    }
+
+    .container a{
+        text-decoration: none; /* remove underline */
+        color: inherit;
+    }
+
+    .assignment-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #ffffff50;
+      padding: 40px 60px;
+      border-radius: 20px;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.5s, background-color 0.5s;
+      animation: popUp 1s ease forwards;
+      border-radius: 0px 15px 0px 15px;
+    }
+
+    .assignment-box:hover {
+      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 0px 15px 0px 15px;
+    }
+
+    @keyframes popUp {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="assignment-box">
+  <p><a href="Practical4_1.html">Assignment 4.1</a></p>
+</div>
+  <div class="assignment-box">
+    <p><a href="Practical4_2.html">Assignment 4.2</a></p>
+  </div>
+</div>
+
+</body>
+</html>
