@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="student.xsl"?>
-<school>
-  <student>
-    <name>Gayatri Jadhav</name>
-    <rollNo>139</rollNo>
-    <class>TYBSc CS</class>
-    <marks>
-      <subject name="Maths">90</subject>
-      <subject name="Physics">88</subject>
-      <subject name="Chemistry">85</subject>
-    </marks>
-  </student>
-
-  <student>
-    <name>Omkar Patil</name>
-    <rollNo>140</rollNo>
-    <class>TYBSc CS</class>
-    <marks>
-      <subject name="Maths">78</subject>
-      <subject name="Physics">82</subject>
-      <subject name="Chemistry">80</subject>
-    </marks>
-  </student>
-</school>
+<?xml-stylesheet type="text/css" href="styles_ele.css"?>
+<library>
+    <book id="1">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <year>1960</year>
+    </book>
+    <book id="2">
+        <title>1984</title>
+        <author>George Orwell</author>
+        <year>1949</year>
+    </book>
+</library>
